@@ -1,0 +1,43 @@
+.container {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    gap: 8px 7px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "display display display display"
+      "calculator calculator calculator calculator"
+      "calculator calculator calculator calculator"
+      "calculator calculator calculator calculator"
+      "calculator calculator calculator calculator";
+  }
+  
+  .display { grid-area: display; }
+  
+  .calculator { grid-area: calculator; }
+  
+  
+  html, body , .container {
+    height: 100%;
+    margin: 0;
+  }
+  
+  /* For presentation only, no need to copy the code below */
+  
+  .container * {
+    border: 1px solid red;
+    position: relative;
+  }
+  
+  .container *:after {
+    content:attr(class);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  
