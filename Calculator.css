@@ -1,43 +1,54 @@
-.container {  display: grid;
+.container{
+    width: 20vw;
+    height: 50vh;
+    margin: auto;
+    border: solid 1px #000;
+}
+
+.calcu {  display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
     gap: 8px 7px;
     grid-auto-flow: row;
     grid-template-areas:
       "display display display display"
-      "calculator calculator calculator calculator"
-      "calculator calculator calculator calculator"
-      "calculator calculator calculator calculator"
-      "calculator calculator calculator calculator";
+      "num-1 num-2 num-3 \-"
+      "num-4 num-5 num-6 \+"
+      "num-7 num-8 num-9 \*"
+      "clear num-0 \= \/";
   }
   
   .display { grid-area: display; }
   
-  .calculator { grid-area: calculator; }
+  .num-1 { grid-area: num-1; }
   
+  .num-2 { grid-area: num-2; }
   
-  html, body , .container {
-    height: 100%;
-    margin: 0;
-  }
+  .num-3 { grid-area: num-3; }
   
-  /* For presentation only, no need to copy the code below */
+  .num-4 { grid-area: num-4; }
   
-  .container * {
-    border: 1px solid red;
-    position: relative;
-  }
+  .num-5 { grid-area: num-5; }
   
-  .container *:after {
-    content:attr(class);
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: grid;
-    align-items: center;
-    justify-content: center;
-  }
+  .num-6 { grid-area: num-6; }
   
+  .num-7 { grid-area: num-7; }
+  
+  .num-8 { grid-area: num-8; }
+  
+  .num-9 { grid-area: num-9; }
+  
+  .clear { grid-area: clear; }
+  
+  .num-0 { grid-area: num-0; }
+  
+  .\= { grid-area: \=; }
+  
+  .\- { grid-area: \-; }
+  
+  .\+ { grid-area: \+; }
+  
+  .\* { grid-area: \*; }
+  
+  .\/ { grid-area: \/; }
   
