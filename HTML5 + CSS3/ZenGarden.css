@@ -71,15 +71,21 @@ header h6{
  div.card.resources > ul > li> p{
     /* border: solid #000 1px; */
     font-weight: 700;
+    
+    
 
   }
   span{
     font-weight: 400;
+    color: #554f55;
   }
 
 li > p.item
 {
     color:#c864c9cf
+}
+h3{
+    color: #554f55;
 }
 
   /* MAIN */
